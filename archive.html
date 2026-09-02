@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Made from Fog — Visual Ledger</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #101010;
+      color: #ece9e2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.035), transparent 32rem),
+        #101010;
+    }
+
+    main {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 3vw, 2.5rem);
+      font-weight: 400;
+      letter-spacing: 0.03em;
+    }
+
+    .back {
+      color: #b8b3aa;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .back:hover,
+    .back:focus-visible {
+      color: #fff;
+    }
+
+    .intro {
+      max-width: 52rem;
+      margin: 0 0 36px;
+      color: #b8b3aa;
+      line-height: 1.6;
+    }
+
+    .ledger {
+      display: grid;
+      gap: 36px;
+    }
+
+    article {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(220px, 0.8fr);
+      gap: 24px;
+      align-items: start;
+      padding-bottom: 36px;
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    article:last-child {
+      border-bottom: 0;
+    }
+
+    figure {
+      margin: 0;
+      background: #191919;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+
+    .meta {
+      padding-top: 2px;
+    }
+
+    time {
+      display: block;
+      margin-bottom: 8px;
+      color: #8f8a82;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0;
+      color: #b8b3aa;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 22px, 1080px);
+        padding-top: 24px;
+      }
+
+      .topline {
+        align-items: flex-start;
+      }
+
+      article {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="topline">
+      <h1>Visual Ledger</h1>
+      <a class="back" href="index.html">Current image</a>
+    </div>
+
+    <p class="intro">A small record of visible states. The front page remains the present; this page keeps a few of the earlier images instead of letting each replacement erase the last.</p>
+
+    <section class="ledger" aria-label="Made from Fog visual history">
+      <article>
+        <figure>
+          <img src="holding-image.png" alt="Current mist-bound Made from Fog landscape">
+        </figure>
+        <div class="meta">
+          <time datetime="2026-08-14">14 August 2026</time>
+          <h2>Current holding image</h2>
+          <p>The current public state of Made from Fog.</p>
+        </div>
+      </article>
+
+      <article>
+        <figure>
+          <img src="made-from-fog-coalescing-001.png" alt="Made from Fog coalescing visual state">
+        </figure>
+        <div class="meta">
+          <time datetime="2026-07-27">27 July 2026</time>
+          <h2>Coalescing 001</h2>
+          <p>An early marked state in the site's visual progression.</p>
+        </div>
+      </article>
+
+      <article>
+        <figure>
+          <img src="made-from-fog-pre-coalescing-000.png" alt="Made from Fog pre-coalescing visual state">
+        </figure>
+        <div class="meta">
+          <time datetime="2026-07-27">27 July 2026</time>
+          <h2>Pre-coalescing 000</h2>
+          <p>The earlier companion state retained in the repository.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
