@@ -1,0 +1,14 @@
+/* Night Dragon R4 project record: isolated decorative typography, no game assets exposed. */
+.nd-intro{background:radial-gradient(ellipse at 80% 28%,rgba(34,74,100,.22),transparent 58%),linear-gradient(170deg,#13191e,#0e1719)}
+.nd-intro h1 em{color:#d5b38c}
+.nd-poster{margin:0 0 58px}
+.nd-placard{isolation:isolate;min-height:460px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;position:relative;overflow:hidden;padding:37px 28px 39px;border:1px solid rgba(218,175,114,.7);outline:6px solid #10191b;box-shadow:0 0 0 7px rgba(170,128,72,.44),inset 0 0 100px rgba(0,0,0,.65);background:radial-gradient(ellipse at 56% 44%,rgba(41,86,117,.34) 0,rgba(22,39,52,.43) 25%,transparent 62%),radial-gradient(ellipse at 38% 100%,rgba(152,99,46,.23),transparent 61%),linear-gradient(140deg,#121b23,#090f17 63%,#1b1b1c);color:#e1be89}
+.nd-placard:before{content:"";position:absolute;inset:15px;pointer-events:none;border:1px solid rgba(207,162,98,.34);z-index:-1}
+.nd-placard:after{content:"";position:absolute;left:-25%;right:-25%;top:36%;height:80%;transform:rotate(-18deg);background:radial-gradient(ellipse at 55% 50%,rgba(124,154,179,.12),transparent 55%);filter:blur(20px);pointer-events:none;z-index:-1}
+.nd-top-mark,.nd-placard-foot{font-family:Arial,Helvetica,sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.24em;line-height:1.7}
+.nd-sigil{font-size:4rem;color:#b5c7cf;line-height:1;text-shadow:0 0 26px rgba(50,139,201,.5)}
+.nd-placard-title{font-family:Georgia,'Times New Roman',serif;font-size:clamp(3rem,7.3vw,5.9rem);letter-spacing:.03em;font-weight:400;line-height:1.02;text-shadow:0 3px 3px #000,0 0 28px rgba(194,122,63,.24)}
+.nd-placard-title em{font-style:normal;color:#b9d0dc;letter-spacing:.04em}
+.nd-poster figcaption{font-size:.62rem;line-height:1.6;letter-spacing:.12em;color:#a7b0a8;margin-top:19px}
+.nd-page .prose strong{color:#efddbd;font-weight:600}
+@media(max-width:650px){.nd-placard{min-height:360px;padding:27px 15px 30px}.nd-top-mark,.nd-placard-foot{letter-spacing:.12em;font-size:.54rem}.nd-placard-title{font-size:clamp(2.8rem,11vw,4.3rem)}.nd-sigil{font-size:3rem}}
