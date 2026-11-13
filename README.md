@@ -1,10 +1,8 @@
-# Made From Fog — Public Surface v0.6 review
+# Made From Fog — Public Surface v0.6
 
 Static-first site for https://made-from-fog.co.uk.
 
-**Review status:** v0.6 is prepared on a review branch and draft pull request. It must not be merged or published without explicit approval.
-
-The refresh adds or updates three evidence-based workshop stories:
+The v0.6 refresh adds or updates three evidence-based workshop stories:
 
 - Arcane Hub Reliquary — lighting experiments, the move to HueForge and the real nine-tile installation;
 - Old laptop, new job — the reused Linux Hub, including the Pi-hole experiment and its home behind the Reliquary;
